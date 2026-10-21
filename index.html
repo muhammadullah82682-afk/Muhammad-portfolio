@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of a beginner web developer.">
+  <title>Your Name | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#home">MyPortfolio<span>.</span></a>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">HELLO, WORLD! 👋</p>
+      <h1>I'm <span>Muhammad Ullah</span></h1>
+      <h2>Aspiring Web Developer</h2>
+      <p class="intro">
+        I'm a Computer Science student learning to build
+        beautiful, responsive, and user-friendly websites.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn primary" href="#projects">Explore My Work</a>
+        <a class="btn secondary" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2>About Me</h2>
+      <p>
+        I'm a Computer Science student passionate about web
+        development and technology. I enjoy learning how websites
+        work and turning ideas into practical projects.
+        My goal is to become a skilled web developer by building
+        real projects and improving my skills every day.
+      </p>
+    </section>
+
+    <section class="section" id="skills">
+      <p class="eyebrow">WHAT I'M LEARNING</p>
+      <h2>My Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">C++</div>
+        <div class="skill">Python</div>
+        <div class="skill">Databases</div>
+      </div>
+      <p class="note">
+        I'm continuously learning and improving my technical skills.
+      </p>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="eyebrow">MY PRACTICAL WORK</p>
+      <h2>My Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-number">PROJECT 01</span>
+          <h3>Student Database</h3>
+          <p>
+            A university project exploring how student records
+            can be organized and managed in a database.
+          </p>
+          <p class="tech">Database · SQL</p>
+          <a href="#contact">Ask me about this project →</a>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">PROJECT 02</span>
+          <h3>HTML Table Design</h3>
+          <p>
+            A webpage built with HTML tables to practice
+            organizing information into rows and columns.
+          </p>
+          <p class="tech">HTML · CSS</p>
+          <a href="#contact">Ask me about this project →</a>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">PROJECT 03</span>
+          <h3>Programming Practice</h3>
+          <p>
+            Small programming exercises created to improve
+            logical thinking and problem-solving skills.
+          </p>
+          <p class="tech">C++ · Python</p>
+          <a href="#contact">Ask me about this project →</a>
+        </article>
+      </div>
+      <p class="note">
+        Replace these examples with your actual assignments and
+        describe what you personally built.
+      </p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Contact Me</h2>
+      <p>
+        Have a project idea or want to connect? Send me a message.
+      </p>
+
+      <form id="contact-form">
+        <label for="visitor-name">Your name</label>
+        <input id="visitor-name" name="name"
+          type="text" placeholder="Enter your name" required>
+
+        <label for="visitor-email">Your email</label>
+        <input id="visitor-email" name="email"
+          type="email" placeholder="Enter your email" required>
+
+        <label for="visitor-message">Your message</label>
+        <textarea id="visitor-message" name="message"
+          placeholder="Write your message" rows="4" required></textarea>
+
+        <button class="btn primary" type="submit">Prepare Email</button>
+        <p id="form-status" role="status"></p>
+      </form>
+      <p class="note">
+        This contact form opens your email application.
+        It does not store or send messages through a server.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Built with HTML and CSS </p>
+  </footer>
+
+</body>
+</html>
